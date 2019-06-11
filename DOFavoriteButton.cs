@@ -281,7 +281,7 @@ namespace DOFavoriteButtonXamarin
                     NSValue.FromCATransform3D(CATransform3D.MakeScale(1.0F, 1.0F, 1.0F)),    //  2/10
                     NSValue.FromCATransform3D(CATransform3D.MakeScale(1.2F, 1.0F, 1.0F)),    //  3/10
                     NSValue.FromCATransform3D(CATransform3D.MakeScale(1.3F, 1.3F, 1.0F)),    //  4/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.37F, 1.37F, 1.0F)),    //  5/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.37F, 1.37F, 1.0F)),  //  5/10
                     NSValue.FromCATransform3D(CATransform3D.MakeScale(1.4F, 1.4F, 1.0F)),    //  6/10
                     NSValue.FromCATransform3D(CATransform3D.MakeScale(1.4F, 1.4F, 1.0F))     // 10/10
                 };
@@ -298,15 +298,15 @@ namespace DOFavoriteButtonXamarin
 
             _circleMaskTransform.Duration = 0.333; // 0.0333 * 10
             _circleMaskTransform.Values = new NSObject[9] {
-                    NSValue.FromCATransform3D(CATransform3D.Identity),                                                              //  0/10
-                    NSValue.FromCATransform3D(CATransform3D.Identity),                                                              //  2/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 1.25F, imageFrame.Height * 1.25F, 1.0F)),   //  3/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 2.688F, imageFrame.Height * 2.688F, 1.0F)),   //  4/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 3.923F, imageFrame.Height * 3.923F, 1.0F)),   //  5/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 4.375F, imageFrame.Height * 4.375F, 1.0F)),   //  6/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 4.731F, imageFrame.Height * 4.731F, 1.0F)),   //  7/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 5.0F, imageFrame.Height * 5.0F, 1.0F)),   //  9/10
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 5.0F, imageFrame.Height * 5.0F, 1.0F))    // 10/10
+                    NSValue.FromCATransform3D(CATransform3D.Identity),                                                                  //  0/10
+                    NSValue.FromCATransform3D(CATransform3D.Identity),                                                                  //  2/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 1.25F, imageFrame.Height * 1.25F, 1.0F)),      //  3/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 2.688F, imageFrame.Height * 2.688F, 1.0F)),    //  4/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 3.923F, imageFrame.Height * 3.923F, 1.0F)),    //  5/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 4.375F, imageFrame.Height * 4.375F, 1.0F)),    //  6/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 4.731F, imageFrame.Height * 4.731F, 1.0F)),    //  7/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 5.0F, imageFrame.Height * 5.0F, 1.0F)),        //  9/10
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(imageFrame.Width * 5.0F, imageFrame.Height * 5.0F, 1.0F))         // 10/10
                 };
             _circleMaskTransform.KeyTimes = new NSNumber[9] {
                     NSNumber.FromDouble(0.0),    //  0/10
@@ -348,7 +348,7 @@ namespace DOFavoriteButtonXamarin
                 NSNumber.FromDouble(0.389),  //  7/18
                 NSNumber.FromDouble(0.444),  //  8/18
                 NSNumber.FromDouble(0.944),  // 17/18
-                NSNumber.FromDouble(1.0)    // 18/18
+                NSNumber.FromDouble(1.0)     // 18/18
             };
 
             _lineStrokeEnd.Duration = 0.6; //0.0333 * 18
@@ -390,23 +390,23 @@ namespace DOFavoriteButtonXamarin
         {
             _imageTransform.Duration = 1.0; //0.0333 * 30
             _imageTransform.Values = new NSObject[17] {
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.0F, 0.0F, 1.0F)),  //  0/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.0F, 0.0F, 1.0F)),  //  3/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.2F, 1.2F, 1.0F)),  //  9/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.25F, 1.25F, 1.0F)),  // 10/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.2F, 1.2F, 1.0F)),  // 11/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.9F, 0.9F, 1.0F)),  // 14/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.875F, 0.875F, 1.0F)),  // 15/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.875F, 0.875F, 1.0F)),  // 16/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.9F, 0.9F, 1.0F)),  // 17/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.013F, 1.013F, 1.0F)),  // 20/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.025F, 1.025F, 1.0F)),  // 21/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.013F, 1.013F, 1.0F)),  // 22/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.96F, 0.96F, 1.0F)),  // 25/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.95F, 0.95F, 1.0F)),  // 26/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.96F, 0.96F, 1.0F)),  // 27/30
-                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.99F, 0.99F, 1.0F)),  // 29/30
-                    NSValue.FromCATransform3D(CATransform3D.Identity)                       // 30/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.0F, 0.0F, 1.0F)),       //  0/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.0F, 0.0F, 1.0F)),       //  3/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.2F, 1.2F, 1.0F)),       //  9/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.25F, 1.25F, 1.0F)),     // 10/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.2F, 1.2F, 1.0F)),       // 11/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.9F, 0.9F, 1.0F)),       // 14/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.875F, 0.875F, 1.0F)),   // 15/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.875F, 0.875F, 1.0F)),   // 16/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.9F, 0.9F, 1.0F)),       // 17/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.013F, 1.013F, 1.0F)),   // 20/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.025F, 1.025F, 1.0F)),   // 21/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(1.013F, 1.013F, 1.0F)),   // 22/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.96F, 0.96F, 1.0F)),     // 25/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.95F, 0.95F, 1.0F)),     // 26/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.96F, 0.96F, 1.0F)),     // 27/30
+                    NSValue.FromCATransform3D(CATransform3D.MakeScale(0.99F, 0.99F, 1.0F)),     // 29/30
+                    NSValue.FromCATransform3D(CATransform3D.Identity)                           // 30/30
                     };
             _imageTransform.KeyTimes = new NSNumber[17] {
                     NSNumber.FromDouble(0.0),    //  0/30
@@ -489,7 +489,6 @@ namespace DOFavoriteButtonXamarin
             _isSelected = false;
             _imageShape.FillColor = _imageColorOff.CGColor;
 
-            // remove all animations
             _circleShape.RemoveAllAnimations();
             _circleMask.RemoveAllAnimations();
             _imageShape.RemoveAllAnimations();
