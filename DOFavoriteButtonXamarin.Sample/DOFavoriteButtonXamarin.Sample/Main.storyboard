@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1592" customClass="DOFavoriteButton" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="101" y="33" width="64" height="64"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOn">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.176113592157138" green="0.58377185880829" blue="0.200470602145658" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Image" value="paperclip-8x.png"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOff">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.232626878907732" green="0.414811366580311" blue="0.220364127587645" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="CircleColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.435800695756583" green="0.726157707253886" blue="0.0739208989000149" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="LineColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.972247971983364" blue="0.346263343790951" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1389" customClass="DOFavoriteButton" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="31" y="33" width="64" height="64"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOn">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.315037108131537" green="0.534407383419689" blue="0.307955339176289" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Image" value="power-standby-8x.png"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOff">
+                                        <color key="value" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.333333333333333" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="CircleColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.187638968599514" green="1" blue="0.948831953861445" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="LineColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.312291351567477" green="0.571517701817317" blue="1" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1593" customClass="DOFavoriteButton" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="170" y="33" width="64" height="64"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOn">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.651545991425798" blue="0.434782551966891" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Image" value="magnifying-glass-8x.png"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOff">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.539744314067835" green="0.528981812754837" blue="0.754513439119171" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="CircleColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.874526221732197" blue="0.401190670359949" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="LineColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.574337128227959" green="0.179245589015966" blue="1" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1594" customClass="DOFavoriteButton" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="240" y="33" width="64" height="64"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOn">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.938086949481865" green="0.637757776986143" blue="0.82545039085094" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Image" value="link-intact-8x.png"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOff">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.731804747008175" green="0.779064119170984" blue="0.257875444219867" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="CircleColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.74140632333541" blue="0.407167732899474" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="LineColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.867025582901554" green="0.156723197569965" blue="0.140393057540911" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Duration">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1595" customClass="DOFavoriteButton" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="311" y="33" width="64" height="64"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOn">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.217572846601031" blue="0.268880583507135" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Image" value="heart-8x.png"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ImageColorOff">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.601683090495114" blue="0.555967936837163" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="CircleColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.499387851441001" blue="0.692617598730621" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="LineColor">
+                                        <color key="value" colorSpace="custom" customColorSpace="sRGB" red="0.848353938143776" green="0.497552783311565" blue="0.928048089378238" alpha="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="ImageButton2" destination="1592" id="name-outlet-1592"/>
+                        <outlet property="ImageButton" destination="1389" id="name-outlet-1389"/>
+                        <outlet property="ImageButton3" destination="1593" id="name-outlet-1593"/>
+                        <outlet property="ImageButton4" destination="1594" id="name-outlet-1594"/>
+                        <outlet property="ImageButton5" destination="1595" id="name-outlet-1595"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="power-standby-8x.png" width="64" height="64"/>
+        <image name="paperclip-8x.png" width="64" height="64"/>
+        <image name="magnifying-glass-8x.png" width="64" height="64"/>
+        <image name="link-intact-8x.png" width="64" height="64"/>
+        <image name="heart-8x.png" width="64" height="64"/>
+    </resources>
+</document>

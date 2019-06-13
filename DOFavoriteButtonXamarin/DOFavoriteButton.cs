@@ -4,6 +4,7 @@ using System.ComponentModel;
 using CoreGraphics;
 using Foundation;
 using UIKit;
+using System.Linq;
 
 namespace DOFavoriteButtonXamarin
 {
@@ -33,6 +34,8 @@ namespace DOFavoriteButtonXamarin
         private CAKeyFrameAnimation _lineOpacity = new CAKeyFrameAnimation() { KeyPath = "opacity" };
         private CAKeyFrameAnimation _imageTransform = new CAKeyFrameAnimation() { KeyPath = "transform" };
 
+        public DOFavoriteButton(IntPtr handle) : base(handle) { }
+
         public DOFavoriteButton(CGRect frame) : this(frame, new UIImage()) { }
         public DOFavoriteButton() : this(CGRect.Empty) { }
 
@@ -49,6 +52,7 @@ namespace DOFavoriteButtonXamarin
             AddTargets();
         }
 
+        [Export("Image"), Browsable(true)]
         public UIImage Image
         {
             get
@@ -62,6 +66,7 @@ namespace DOFavoriteButtonXamarin
             }
         }
 
+        [Export("ImageColorOn"), Browsable(true)]
         public UIColor ImageColorOn
         {
             get
@@ -73,13 +78,14 @@ namespace DOFavoriteButtonXamarin
             {
                 _imageColorOn = value;
 
-                if (IsSelected)
+                if (IsSelected && _imageShape != null)
                 {
                     _imageShape.FillColor = _imageColorOn.CGColor;
                 }
             }
         }
 
+        [Export("ImageColorOff"), Browsable(true)]
         public UIColor ImageColorOff
         {
             get
@@ -91,13 +97,14 @@ namespace DOFavoriteButtonXamarin
             {
                 _imageColorOff = value;
 
-                if (!IsSelected)
+                if (!IsSelected && _imageShape != null)
                 {
                     _imageShape.FillColor = _imageColorOff.CGColor;
                 }
             }
         }
 
+        [Export("CircleColor"), Browsable(true)]
         public UIColor CircleColor
         {
             get
@@ -108,10 +115,15 @@ namespace DOFavoriteButtonXamarin
             set
             {
                 _circleColor = value;
-                _circleShape.FillColor = _circleColor.CGColor;
+
+                if (_circleShape != null)
+                {
+                    _circleShape.FillColor = _circleColor.CGColor;
+                }
             }
         }
 
+        [Export("LineColor"), Browsable(true)]
         public UIColor LineColor
         {
             get
@@ -122,14 +134,19 @@ namespace DOFavoriteButtonXamarin
             set
             {
                 _lineColor = value;
-                foreach (var line in _lines)
+
+                if (_lines != null && _lines.Any())
                 {
-                    _lineColor = value;
-                    line.StrokeColor = _lineColor.CGColor;
+                    foreach (var line in _lines)
+                    {
+                        _lineColor = value;
+                        line.StrokeColor = _lineColor.CGColor;
+                    }
                 }
             }
         }
 
+        [Export("Duration"), Browsable(true)]
         public double Duration
         {
             get
@@ -196,7 +213,7 @@ namespace DOFavoriteButtonXamarin
             {
                 Bounds = imageFrame,
                 Position = imgCenterPoint,
-                Path = UIBezierPath.FromRect(imageFrame).CGPath,
+                Path = UIBezierPath.FromOval(imageFrame).CGPath,
                 FillColor = _circleColor.CGColor,
                 Transform = CATransform3D.MakeScale(0.0F, 0.0F, 1.0F)
             };
@@ -463,7 +480,7 @@ namespace DOFavoriteButtonXamarin
             this.Layer.Opacity = 1F;
         }
 
-        void Select()
+        public void Select()
         {
             _isSelected = true;
             _imageShape.FillColor = _imageColorOn.CGColor;
@@ -484,7 +501,7 @@ namespace DOFavoriteButtonXamarin
             CATransaction.Commit();
         }
 
-        void Deselect()
+        public void Deselect()
         {
             _isSelected = false;
             _imageShape.FillColor = _imageColorOff.CGColor;
