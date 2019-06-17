@@ -1,4 +1,6 @@
 # DOFavoriteButton.Xamarin
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHankiDesign%2FDOFavoriteButton.Xamarin.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FHankiDesign%2FDOFavoriteButton.Xamarin?ref=badge_small)
+
 DOFavoriteButton.Xamarin is a Xamarin.iOS port of the Swift based [DOFavoriteButton](https://github.com/okmr-d/DOFavoriteButton) control created by [Daiki Okumura](https://github.com/okmr-d).
 
 ![](https://github.com/HankiDesign/DOFavoriteButton.Xamarin/blob/master/DOFavoriteButtonXamarin.Sample/dofavoritebuttonXamarinSample.gif)
